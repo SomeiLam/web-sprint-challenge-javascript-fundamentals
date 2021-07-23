@@ -36,10 +36,10 @@ Edit this document to include your answers after each question. Make sure to lea
     - A closure gives us access to an outer function’s scope from an inner function. To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function. The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
 
 4. Describe the four principles of the 'this' keyword.
-    - Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
-    - Whenever a function is called by a preceding dot, the object before that dot is this.
-    - Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
-    - Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+    - this in Default Binding points to the global object. Default binding is applied for standalone functions and is the fallback option for all other types.
+    - Implicit Binding is applied when we invoke a function in an Object using the dot notation. this in such scenarios will point to the object using which the function was invoked. Or simply the object on the left side of the dot.
+    - Explicit Binding can be applied using call(), apply(), and bind(). In this method, we can force a function to use a certain object as its this.
+    - New binding is applied when we create an object using Function Constructors.
 
 5. Why do we need super() in an extended class?
     - The super keyword is used to access and call functions on an object's parent.
