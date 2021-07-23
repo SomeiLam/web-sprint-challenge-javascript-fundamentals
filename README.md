@@ -25,14 +25,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    - We use .map to apply a set of rules to an array and return a new array without changing the original variable.
+    - We use .reduce as an aggregator, it allows us to reduce all data to a single value.
+    - We use .filter to iterate over all items in the array with a condition and return a new array with only what we want.
 
 2. Explain the difference between a callback and a higher order function.
+    - A higher order function is a function that takes another function as an argument and/or returns a function to its callers. A callback function is a function that is passed to another function with the expectation that the other function will call it.
 
 3. Explain what a closure is.
+    - A closure gives us access to an outer function’s scope from an inner function. To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function. The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
 
 4. Describe the four principles of the 'this' keyword.
+    - Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+    - Whenever a function is called by a preceding dot, the object before that dot is this.
+    - Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+    - Whenever JavaScript’s call or apply method is used, this is explicitly defined.
 
 5. Why do we need super() in an extended class?
+    - The super keyword is used to access and call functions on an object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
